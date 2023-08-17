@@ -640,7 +640,7 @@ class Reader:
                  """.format(self.language, self.language)},
         ]
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-0613",
             messages=messages,
         )
         result = ''
@@ -696,7 +696,7 @@ class Reader:
         ]
 
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-0613",
             messages=messages,
         )
         result = ''

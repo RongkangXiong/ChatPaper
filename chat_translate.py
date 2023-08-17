@@ -137,7 +137,7 @@ def chat_check_domain(text, key):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=messages,
-        temperature=0.3,
+        temperature=0.1,
     )
     result = ''
     for choice in response.choices:
